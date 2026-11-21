@@ -1,9 +1,18 @@
 import axios from 'axios';
+import { useEffect, useState } from 'react';
 import "./HomePage.css";
-import { products } from "../../starting-code/data/products";
 import { Header } from "../components/Header";
 
 export function HomePage() {
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(()=>{
+     axios.get('http://localhost:3000/api/products')
+      .then((response)=>{
+        setProducts(response.data);
+      });
+  }, [] );
 
     // fetch('http://localhost:3000/api/products')
     //   .then((response)=>{
@@ -12,10 +21,7 @@ export function HomePage() {
     //     console.log(data);
     //   });
 
-      axios.get('http://localhost:3000/api/products')
-      .then((response)=>{
-        console.log(response.data);
-      });
+     
 
   return (
     <>
