@@ -6,6 +6,7 @@ export function CheckoutPage() {
     <>
 
       <title>Checkout</title>
+      <link rel='icon' href='../public/images/favicon/cart-favicon.png'></link>
 
       <div className="checkout-header">
         <div className="header-content">

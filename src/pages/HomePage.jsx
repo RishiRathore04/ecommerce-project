@@ -6,6 +6,8 @@ export function HomePage() {
   <>
 
     <title>HomePage</title>
+    <link rel='icon' href='../public/images/favicon/home-favicon.png'></link>
+
 
     <Header/>
 
