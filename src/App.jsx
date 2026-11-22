@@ -1,12 +1,12 @@
-import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Routes , Route} from 'react-router'; 
 import { HomePage } from './pages/HomePage';
 import { CheckoutPage } from './pages/CheckoutPage';
-import './App.css'
 import { OrdersPage } from './pages/OrdersPage';
 import { TrackingPage } from './pages/TrackingPage';
 import { ErrorPage } from './pages/ErrorPage';
+import axios from 'axios';
+import './App.css';
 
 function App() {
 
