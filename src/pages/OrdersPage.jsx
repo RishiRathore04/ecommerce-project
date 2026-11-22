@@ -1,6 +1,7 @@
 import { Header } from "../components/Header";
 import axios from "axios";
 import { Fragment, useEffect, useState } from "react";
+import { Link } from "react-router";
 import "./OrdersPage.css";
 import dayjs from "dayjs";
 import { formatMoney } from "../utils/money";
@@ -78,11 +79,11 @@ export function OrdersPage({ cart }) {
                           </div>
 
                           <div className="product-actions">
-                            <a href="/tracking">
+                            <Link to="/tracking">
                               <button className="track-package-button button-secondary">
                                 Track package
                               </button>
-                            </a>
+                            </Link>
                           </div>
                         </Fragment>
                       );
