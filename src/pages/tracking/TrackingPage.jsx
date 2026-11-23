@@ -1,7 +1,7 @@
-import { Header } from '../components/Header';
+import { Header } from '../../components/Header';
 import './TrackingPage.css';
 
-export function TrackingPage() {
+export function TrackingPage({cart}) {
 
     return(
         <>
@@ -10,7 +10,7 @@ export function TrackingPage() {
             <link rel='icon' href='../public/images/favicon/tracking-favicon.png'></link>
 
 
-           <Header/>
+           <Header cart={cart}/>
 
             <div className="tracking-page">
             <div className="order-tracking">

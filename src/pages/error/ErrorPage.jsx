@@ -1,12 +1,12 @@
 import { Link } from 'react-router';
-import { Header } from '../components/Header';
+import { Header } from '../../components/Header';
 import './ErrorPage.css';
 
 export function ErrorPage() {
   return (
     <>
       <title>404 - Page Not Found</title>
-      <Header />
+      <Header/>
 
       <div className="error-page-container">
         <h1 className="error-code">404</h1>
