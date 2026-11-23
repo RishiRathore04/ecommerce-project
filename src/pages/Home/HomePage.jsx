@@ -9,11 +9,14 @@ export function HomePage({cart}) {
   const [products, setProducts] = useState([]);
 
   useEffect(()=>{
-    axios.get('/api/products')
-    .then((response)=>{
+    const fetchHomeData = async ()=>{
+      const response = await axios.get('/api/products')
       setProducts(response.data);
-    });
-  }, [] );
+    };
+
+    fetchHomeData();
+    
+  },[]);
 
     // fetch('http://localhost:3000/api/products')
     //   .then((response)=>{
